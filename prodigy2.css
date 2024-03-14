@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  margin: 15px 0px;
+  color: white;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(140, 140, 236);
+}
+
+.main {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 600px) {
+    width: 50%;
+  }
+  max-height: 300px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.time {
+  width: 80%;
+  padding: 0px 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 20px;
+  min-height: 70px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.t {
+  font-size: 60px;
+  font-weight: bolder;
+
+  @media screen and (max-width: 800px) {
+    font-size: 30px;
+  }
+}
+
+.lasps {
+  margin: 5px 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.lap {
+  margin: 10px 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  
+}
+
+.pausebtn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  background-color: blue;
+}
+
+.pausebtn:hover {
+  transition: all 350ms;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.stopbtn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  background-color: red;
+  margin: 0px 15px;
+}
+
+.stopbtn:hover {
+  transition: all 350ms;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.resetbtn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  background-color: green;
+}
+
+.resetbtn:hover {
+  transition: all 350ms;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.lapbtn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  background-color: black;
+}
+
+.lapbtn:hover {
+  transition: all 350ms;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.lap{
+  overflow-y: auto;
+  height: 70px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+}
+
+.lap::-webkit-scrollbar{
+  scrollbar-width: 1px;
+}
